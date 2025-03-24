@@ -10,7 +10,7 @@ class Security():
     def generarToken(cls, usuario):
         payload={
             'iat': datetime.datetime.now(tz = cls.tz),
-            'exp': datetime.datetime.now(tz = cls.tz) + datetime.timedelta(minutes=30),
+            'exp': datetime.datetime.now(tz = cls.tz) + datetime.timedelta(minutes=120),
             'id': usuario.id
         }
         return jwt.encode(payload, 'D5*F?_1?-d$f*1', algorithm='HS256')

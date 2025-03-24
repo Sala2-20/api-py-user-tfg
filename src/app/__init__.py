@@ -9,7 +9,11 @@ def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
     
-    CORS(app, resources={r"/*": {"origins": "*"}})
+    CORS(app, supports_credentials=True, resources={r"/*": {
+    "origins": "*",
+    "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    "allow_headers": ["Content-Type", "Authorization"]
+    }})
     Swagger(app)
     app.config.from_object(Config)
     db.init_app(app)
