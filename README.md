@@ -1,4 +1,4 @@
-<p align="center"><a href="https://github.com/jAtienza00" target="_blank"><img src="https://github.com/jAtienza00/front-end-tfg/blob/main/imagenes/intercoin.png" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://github.com/jAtienza00" target="_blank"><img src="https://github.com/jAtienza00/front-end-tfg/blob/main/front-end/public/imagenes/intercoin.png" width="400" alt="Laravel Logo"></a></p>
 
 
 ## Proyecto TFG
